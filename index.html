@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discount Web App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Logo</div>
+      <nav>
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul>
+          <li><a href="#">Все предложения</a></li>
+          <li><a href="#">Скидки</a></li>
+          <li><a href="#">Акции</a></li>
+          <li><a href="#">Промокоды</a></li>
+          <li><a href="#">Кешбэк</a></li>
+        </ul>
+      </nav>
+      <div class="icon-bar">
+        <div class="icon search-icon">
+          <i class="fa fa-search"></i>
+        </div>
+        <div class="icon send-icon">
+          <i class="fa fa-paper-plane"></i>
+        </div>
+        <div class="icon user-add-icon">
+          <i class="fa fa-user-plus"></i>
+        </div>
+        <div class="language">
+          Ру
+          <ul class="language-menu">
+            <li>Eng</li>
+            <li>Ру</li>
+          </ul>
+        </div>
+
+        <button class="add-discount-btn">
+          Добавить скидку<span class="plus-btn"
+            ><i class="fa-solid fa-plus"></i
+          ></span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="sidebar">
+          <h2>Скидки дня</h2>
+          <p>23 предложения</p>
+          <div class="cart">
+            <img
+              src="./assets/korzinka.png"
+              alt="Product Image"
+              class="product-image"
+            />
+            <div class="product-details">
+              <h2>KORZINKA.UZ</h2>
+              <p>В четверг скидки на рыбу</p>
+            </div>
+            <div class="product-sales">
+              <div class="sale">
+                <p>Скидки</p>
+                <div class="cashback"><span>Кешбэк</span> <span>3%</span></div>
+              </div>
+              <p>Супермаркеты</p>
+            </div>
+          </div>
+          <div class="cart">
+            <img
+              src="./assets/mango.png"
+              alt="Product Image"
+              class="product-image"
+            />
+            <div class="product-details">
+              <h2>MANGO</h2>
+              <p>Акция 1+1</p>
+            </div>
+            <div class="product-sales">
+              <div class="sale">
+                <p>Акции</p>
+                <div class="cashback"><span>Кешбэк</span> <span>3%</span></div>
+              </div>
+              <p>Магазины брендовой одежды</p>
+            </div>
+          </div>
+          <div class="cart">
+            <img
+              src="./assets/texnomart.png"
+              alt="Product Image"
+              class="product-image"
+            />
+            <div class="product-details">
+              <h2>TEXNOMART</h2>
+              <p>До — 60% на бытовую технику в ТЦ «Samarkand Darvoza»</p>
+            </div>
+            <div class="product-sales">
+              <div class="sale">
+                <p>Скидки</p>
+                <div class="cashback"><span>Кешбэк</span> <span>3%</span></div>
+              </div>
+              <p>Магазины электроники и бытовой техники</p>
+            </div>
+          </div>
+          <div class="cart">
+            <img
+              src="./assets/makro.png"
+              alt="Product Image"
+              class="product-image"
+            />
+            <div class="product-details">
+              <h2>MAKRO</h2>
+              <p>При покупке CIF пачка губок Salixan БЕСПЛАТНО</p>
+            </div>
+            <div class="product-sales">
+              <div class="sale">
+                <p>Акции</p>
+                <div class="cashback"><span>Кешбэк</span> <span>3%</span></div>
+              </div>
+              <p>Супермаркеты</p>
+            </div>
+          </div>
+        </div>
+        <!-- main content -->
+        <div class="main-content">
+          <h1>Main Section</h1>
+          <div class="slide-content">
+            <h2>Топовые скидки</h2>
+            <hr />
+            <ul class="slide-nav">
+              <li>Питание</li>
+              <li>Связь</li>
+              <li>Магазины</li>
+            </ul>
+            <div class="slider">
+              <div class="slide active">
+                <div class="slide-cart">
+                  <div class="promotion">До 29 февраля</div>
+                  <img
+                    src="./assets/gosty.png"
+                    alt="Product Image"
+                    class="product-image"
+                  />
+                  <div class="product-details">
+                    <h2>GOSTY</h2>
+                    <p>Каждый вторник — 20% на все меню</p>
+                  </div>
+                  <div class="product-sales">
+                    <div class="sale">
+                      <p>Скидки</p>
+                      <div class="cashback">
+                        <span>Кешбэк</span> <span>3%</span>
+                      </div>
+                    </div>
+                    <p>Рестораны</p>
+                  </div>
+                </div>
+
+                <div class="slide-cart">
+                  <div class="countdown" id="countdown-timer">Loading...</div>
+                  <img
+                    src="./assets/shosh.png"
+                    alt="Product Image"
+                    class="product-image"
+                  />
+                  <div class="product-details">
+                    <h2>ShOSH</h2>
+                    <p>Скидки на еду и напитки</p>
+                  </div>
+                  <div class="product-sales">
+                    <div class="sale">
+                      <p>Скидки</p>
+                      <div class="cashback">
+                        <span>Кешбэк</span> <span>3%</span>
+                      </div>
+                    </div>
+                    <p>Кафе</p>
+                  </div>
+                </div>
+                <div class="slide-cart">
+                  <div class="promotion">До 29 февраля</div>
+                  <img
+                    src="./assets/petrovich.png"
+                    alt="Product Image"
+                    class="product-image"
+                  />
+                  <div class="product-details">
+                    <h2>PETROVICH</h2>
+                    <p>Ланч по выгодной цене и 2% кешбэк по промокоду</p>
+                  </div>
+                  <div class="product-sales">
+                    <div class="sale">
+                      <p>Скидки</p>
+                      <div class="cashback">
+                        <span>Кешбэк</span> <span>3%</span>
+                      </div>
+                    </div>
+                    <p>Рестораны</p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-cart">
+                  <div class="promotion">До 29 февраля</div>
+                  <img
+                    src="./assets/gosty.png"
+                    alt="Product Image"
+                    class="product-image"
+                  />
+                  <div class="product-details">
+                    <h2>GOSTY</h2>
+                    <p>Каждый вторник — 20% на все меню</p>
+                  </div>
+                  <div class="product-sales">
+                    <div class="sale">
+                      <p>Скидки</p>
+                      <div class="cashback">
+                        <span>Кешбэк</span> <span>3%</span>
+                      </div>
+                    </div>
+                    <p>Рестораны</p>
+                  </div>
+                </div>
+
+                <div class="slide-cart">
+                  <div class="countdown" id="countdown-timer">Loading...</div>
+                  <img
+                    src="./assets/shosh.png"
+                    alt="Product Image"
+                    class="product-image"
+                  />
+                  <div class="product-details">
+                    <h2>ShOSH</h2>
+                    <p>Скидки на еду и напитки</p>
+                  </div>
+                  <div class="product-sales">
+                    <div class="sale">
+                      <p>Скидки</p>
+                      <div class="cashback">
+                        <span>Кешбэк</span> <span>3%</span>
+                      </div>
+                    </div>
+                    <p>Кафе</p>
+                  </div>
+                </div>
+                <div class="slide-cart">
+                  <div class="promotion">До 29 февраля</div>
+                  <img
+                    src="./assets/petrovich.png"
+                    alt="Product Image"
+                    class="product-image"
+                  />
+                  <div class="product-details">
+                    <h2>PETROVICH</h2>
+                    <p>Ланч по выгодной цене и 2% кешбэк по промокоду</p>
+                  </div>
+                  <div class="product-sales">
+                    <div class="sale">
+                      <p>Скидки</p>
+                      <div class="cashback">
+                        <span>Кешбэк</span> <span>3%</span>
+                      </div>
+                    </div>
+                    <p>Рестораны</p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-cart">
+                  <div class="promotion">До 29 февраля</div>
+                  <img
+                    src="./assets/gosty.png"
+                    alt="Product Image"
+                    class="product-image"
+                  />
+                  <div class="product-details">
+                    <h2>GOSTY</h2>
+                    <p>Каждый вторник — 20% на все меню</p>
+                  </div>
+                  <div class="product-sales">
+                    <div class="sale">
+                      <p>Скидки</p>
+                      <div class="cashback">
+                        <span>Кешбэк</span> <span>3%</span>
+                      </div>
+                    </div>
+                    <p>Рестораны</p>
+                  </div>
+                </div>
+
+                <div class="slide-cart">
+                  <div class="countdown" id="countdown-timer">Loading...</div>
+                  <img
+                    src="./assets/shosh.png"
+                    alt="Product Image"
+                    class="product-image"
+                  />
+                  <div class="product-details">
+                    <h2>ShOSH</h2>
+                    <p>Скидки на еду и напитки</p>
+                  </div>
+                  <div class="product-sales">
+                    <div class="sale">
+                      <p>Скидки</p>
+                      <div class="cashback">
+                        <span>Кешбэк</span> <span>3%</span>
+                      </div>
+                    </div>
+                    <p>Кафе</p>
+                  </div>
+                </div>
+                <div class="slide-cart">
+                  <div class="promotion">До 29 февраля</div>
+                  <img
+                    src="./assets/petrovich.png"
+                    alt="Product Image"
+                    class="product-image"
+                  />
+                  <div class="product-details">
+                    <h2>PETROVICH</h2>
+                    <p>Ланч по выгодной цене и 2% кешбэк по промокоду</p>
+                  </div>
+                  <div class="product-sales">
+                    <div class="sale">
+                      <p>Скидки</p>
+                      <div class="cashback">
+                        <span>Кешбэк</span> <span>3%</span>
+                      </div>
+                    </div>
+                    <p>Рестораны</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-content">
+            <h2>Добро пожаловать на сайт</h2>
+            <p>
+              Ваш надёжный помощник в поиске лучших скидок и акций различных
+              компаний!
+            </p>
+            <span
+              >Мы собрали для вас все самые выгодные предложения, чтобы вы могли
+              сэкономить свои деньги и получить максимум удовольствия
+              от покупок. <br />
+              Развернуть текст</span
+            >
+          </div>
+          <hr />
+          <div class="faq">
+            <h1>FAQ</h1>
+            <div class="dropdown">
+              <div class="question">
+                <span>Какие компании представлены на сайте?</span>
+                <button class="arrow">&#x25BC;</button>
+              </div>
+              <div class="answer">
+                <p>
+                  Также можно регулярно посещать сайт и проверять разделы
+                  с акциями и скидками
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <div class="question">
+              <span
+                >Как я могу быть в курсе новых скидок и акций на сайте?</span
+              >
+              <button class="arrow">&#x25BC;</button>
+            </div>
+            <div class="answer">
+              <p>
+                Чтобы быть в курсе новых скидок и акций на сайте, вы можете
+                подписаться на наш телеграм-канал или следить за новостями.<br /><br />
+                Мы регулярно отправляем информацию о новых предложениях и акциях
+                нашим подписчикам, чтобы они всегда могли быть в курсе последних
+                скидок и эксклюзивных предложений. <br />
+                <br />
+                Также можно регулярно посещать сайт и проверять разделы
+                с акциями и скидками
+              </p>
+            </div>
+          </div>
+          <div class="dropdown">
+            <div class="question">
+              <span
+                >Могу ли я поделиться найденными скидками и акциями
+                с друзьями?</span
+              >
+              <button class="arrow">&#x25BC;</button>
+            </div>
+            <div class="answer">
+              <p>
+                Также можно регулярно посещать сайт и проверять разделы
+                с акциями и скидками
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
